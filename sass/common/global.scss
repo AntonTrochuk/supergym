@@ -1,0 +1,33 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.heading-h4 {
+  font-family: $secondary-font;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 22px;
+  color: $color-text-dark-background;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 26px;
+    line-height: 26px;
+  }
+}

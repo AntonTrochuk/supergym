@@ -9,24 +9,18 @@
 </head>
 
 <body class="page-body">
-  <!-- пример использования спрайта
-    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-    <svg>
-      <use href="/__spritemap#sprite-user"></use>
-    </svg>
-    -->
-  <!-- примеры требуемых атрибутов data-test="*" -->
   <main class="main-container">
     <section class="main-container__hero hero" data-test="hero">
       <div class="hero__block">
         <div class="hero__header">
+          <!-- Возможно надо спрайтом -->
           <picture>
-            <source media="(min-width: 1366px)" width="130" height="26" type="image/svg+xml" srcset="./images/advantages_icon_speed_mobile.svg">
-            <source media="(min-width: 768px)" width="110" height="22" type="image/svg+xml" srcset="./images/advantages_icon_speed_mobile.svg">
-            <img class="hero__logo-icon" src="./images/advantages_icon_speed_mobile.svg" width="100" height="20" alt="Логотип Фитнес Центра SUPERGYM">
+            <source media="(min-width: 1366px)" width="130" height="26" type="image/svg+xml" srcset="./img/logo.svg">
+            <source media="(min-width: 768px)" width="110" height="22" type="image/svg+xml" srcset="./img/logo.svg">
+            <img class="hero__logo-icon" src="./img/logo.svg" width="100" height="20" alt="Логотип Фитнес Центра SUPERGYM">
           </picture>
-          <a class="hero__header-link" href="tel:+7(800)5555555">
-            +7 (800) 555-55-55
+          <a class="hero__header-link heading-h4" href="tel:+7(800)5555555">
+            8 800 555-55-55
           </a>
         </div>
         <div class="hero__content">
@@ -52,18 +46,18 @@
               Купить абонемент
             </button>
           </div>
-          <picture>
-            <source media="(min-width: 1366px)" width="500" height="524" type="image/webp" srcset="images/cat_energy_desktop@1x.webp, images/cat_energy_desktop@2x.webp 2x">
-            <source type="image/webp" width="324" height="390" srcset="images/cat_energy@1x.webp 1x, images/cat_energy@2x.webp 2x">
-            <source media="(min-width: 1366px)" width="500" height="524" type="image/png" srcset="images/cat_energy_desktop@1x.png 1x, images/cat_energy_desktop@2x.png 2x">
-            <img class="hero__content-image" src="images/cat_energy@1x.png" srcset="images/cat_energy@2x.png 2x" width="324" height="390" alt="Фотография тренера Фитнес Центра SUPERGYM">
-          </picture>
         </div>
       </div>
 
     </section>
   </main>
-
+  <!-- пример использования спрайта
+    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
+    <svg>
+      <use href="/__spritemap#sprite-user"></use>
+    </svg>
+    -->
+  <!-- примеры требуемых атрибутов data-test="*" -->
   <div data-test="hero">hero</div>
   <div data-test="about">about</div>
   <div data-test="price">price</div>

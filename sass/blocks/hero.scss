@@ -1,0 +1,46 @@
+.hero__block {
+  background: linear-gradient(90deg, #1c3477 0%, #1c3477 0.01%, #1a3578 39.11%, #73184b 75.5%, #b4022a 100%);
+}
+
+.hero__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 15px;
+}
+
+.hero__header-link {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.hero__content {
+  &::after {
+    content: "";
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+      width: 324px;
+      height: 390px;
+      background-image:
+        image-set(
+          url("../../img/hero_image_tablet@1x.webp") 1x,
+          url("../../img/hero_image_tablet@2x.webp") 2x,
+          url("../../img/hero_image_tablet@1x.jpg") 1x,
+          url("../../img/hero_image_tablet@2x.jpg") 2x
+        );
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 500px;
+      height: 524px;
+      background-image:
+        image-set(
+          url("../../img/hero_image_desktop@1x.webp") 1x,
+          url("../../img/hero_image_desktop@2x.webp") 2x,
+          url("../../img/hero_image_desktop@1x.jpg") 1x,
+          url("../../img/hero_image_desktop@2x.jpg") 2x
+        );
+    }
+  }
+}
