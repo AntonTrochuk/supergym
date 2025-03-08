@@ -31,3 +31,67 @@
     line-height: 26px;
   }
 }
+
+.text-s {
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-text-dark-background;
+
+  @media (min-width: $tablet-width) {
+    line-height: 22px;
+  }
+}
+
+.heading-h3 {
+  font-family: $primary-font;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 32px;
+  color: $color-text-dark-background;
+
+  @media (min-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 54px;
+    line-height: 54px;
+  }
+}
+
+.heading-h1 {
+  font-family: $primary-font;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 62px;
+  line-height: 62px;
+  letter-spacing: 1px;
+  color: $color-text-dark-background;
+
+  @media (min-width: $tablet-width) {
+    font-size: 72px;
+    line-height: 85px;
+    letter-spacing: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 92px;
+    line-height: 110px;
+    letter-spacing: 4px;
+  }
+}
+
+.mobile-button-m {
+  font-family: $secondary-font;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 12px;
+  color: $color-text-dark-background;
+}
+
