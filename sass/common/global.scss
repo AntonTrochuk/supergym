@@ -9,28 +9,6 @@
   border: 0;
 }
 
-.heading-h4 {
-  font-family: $secondary-font;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 22px;
-  line-height: 22px;
-
-  @media (min-width: $tablet-width) {
-    font-weight: 700;
-    font-style: normal;
-    font-size: 24px;
-    line-height: 24px;
-  }
-
-  @media (min-width: $desktop-width) {
-    font-weight: 700;
-    font-style: normal;
-    font-size: 26px;
-    line-height: 26px;
-  }
-}
-
 .text-s {
   font-family: $secondary-font;
   font-weight: 400;
@@ -82,6 +60,28 @@
   }
 }
 
+.heading-h4 {
+  font-family: $secondary-font;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 22px;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
+
 .heading-h6 {
   font-family: $secondary-font;
   font-weight: 400;
@@ -106,6 +106,11 @@
   font-style: normal;
   font-size: 14px;
   line-height: 22px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .mobile-button-m {
@@ -116,3 +121,44 @@
   line-height: 12px;
 }
 
+.button-tabs-text {
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.number-m {
+  font-family: $secondary-font;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 150%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+  }
+}
+
+.number-xl {
+  font-family: $secondary-font;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 80px;
+  line-height: 150%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 100px;
+  }
+}
