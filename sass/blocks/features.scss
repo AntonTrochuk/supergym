@@ -1,0 +1,338 @@
+.features {
+  background-color: $color-additional-background;
+
+  h3 {
+    font-family: $primary-font;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 32px;
+    color: $color-text-basic;
+    width: 290px;
+    margin: 0 auto;
+    padding: 40px 0;
+    text-align: center;
+
+    @media (min-width: $tablet-width) {
+      font-size: 42px;
+      line-height: 42px;
+      width: 678px;
+      padding: 60px 0 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 54px;
+      line-height: 54px;
+      width: 1160px;
+      padding: 100px 0 50px;
+    }
+  }
+
+  ul {
+    padding: 0 0 40px;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      column-gap: 30px;
+      row-gap: 40px;
+      width: 678px;
+      margin: 0 auto;
+      padding: 0 0 60px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 1160px;
+      padding: 0 0 100px;
+      column-gap: 40px;
+      row-gap: 80px;
+      position: relative;
+    }
+  }
+
+  ul::before,
+  ul::after {
+    @media (min-width: $desktop-width) {
+      content: "";
+      display: block;
+      width: 360px;
+      height: 2px;
+      background-color: $color-inner-alignment;
+      position: absolute;
+      top: 150px;
+    }
+  }
+
+  ul::after {
+    @media (min-width: $desktop-width) {
+      right: 0;
+    }
+  }
+
+  li:not(:nth-child(3)) {
+    width: 290px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    @media (min-width: $tablet-width) {
+      flex-direction: row;
+      width: 324px;
+      gap: 15px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 360px;
+      gap: 43px;
+    }
+  }
+
+  li:nth-child(1) {
+    @media (min-width: $tablet-width) {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+    }
+  }
+
+  li:nth-child(2) {
+    @media (min-width: $tablet-width) {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-column: 3 / 4;
+      grid-row: 1 / 2;
+      gap: 79px;
+    }
+  }
+
+  li:nth-child(4) {
+    @media (min-width: $tablet-width) {
+      grid-column: 1 / 2;
+      grid-row: 3 / 4;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+    }
+  }
+
+  li:nth-child(5) {
+    @media (min-width: $tablet-width) {
+      grid-column: 2 / 3;
+      grid-row: 3 / 4;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-column: 3 / 4;
+      grid-row: 2 / 3;
+      gap: 81px;
+    }
+  }
+
+  span:nth-child(1) {
+    font-family: $secondary-font;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 64px;
+    line-height: 64px;
+    background: $color-text-additional-gradient;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @media (min-width: $tablet-width) {
+      font-size: 70px;
+      line-height: 70px;
+    }
+  }
+
+  span:nth-child(2) {
+    font-family: $secondary-font;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: $color-desc;
+
+    @media (min-width: $tablet-width) {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+
+  div:nth-child(1),
+  div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    @media (min-width: $tablet-width) {
+      align-items: start;
+      text-align: left;
+    }
+  }
+
+  h6 {
+    font-family: $secondary-font;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 20px;
+    color: $color-text-basic;
+    margin: 0 0 12px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 22px;
+      line-height: 22px;
+      margin: 0 0 8px;
+    }
+  }
+
+  div p {
+    font-family: $secondary-font;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: $color-text-basic;
+    margin: 0;
+    width: 230px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 210px;
+    }
+  }
+
+  li:nth-child(1) p,
+  li:nth-child(4) p {
+    @media (min-width: $tablet-width) {
+      width: 187px;
+    }
+  }
+
+  li:nth-child(2) p {
+    @media (min-width: $tablet-width) {
+      width: 235px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 190px;
+    }
+  }
+
+  li:nth-child(3) {
+    background-color: $color-dark-additional-background;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+    margin: 5px 0;
+
+    @media (min-width: $tablet-width) {
+      grid-column: 1 / 3;
+      grid-row: 2 / 3;
+      width: 320px;
+      padding: 0;
+      justify-self: center;
+      margin: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-column: 2 / 3;
+      grid-row: 1 / 3;
+      width: 360px;
+    }
+  }
+
+  li:nth-child(3) p:nth-child(1) {
+    font-family: $secondary-font;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 64px;
+    line-height: 64px;
+    color: $color-text-dark-background;
+    margin: 30px 0 5px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 70px;
+      line-height: 70px;
+      margin: 35px 0 25px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 58px 0 10px;
+    }
+  }
+
+  li:nth-child(3) p:nth-child(2) {
+    font-family: $secondary-font;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 22px;
+    color: $color-text-dark-background;
+    margin: 0 0 20px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 24px;
+      line-height: 24px;
+      margin: 0 0 25px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 26px;
+      line-height: 26px;
+      margin: 0 0 30px;
+    }
+  }
+
+  li:nth-child(3) p:nth-child(3) {
+    width: 160px;
+    text-align: center;
+    font-family: $secondary-font;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: $color-text-dark-background;
+    margin: 0 0 40px;
+
+    @media (min-width: $tablet-width) {
+      width: 180px;
+      font-size: 16px;
+      line-height: 24px;
+      margin: 0 0 35px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 280px;
+      margin: 0 0 58px;
+    }
+  }
+}
+
