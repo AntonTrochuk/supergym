@@ -1,0 +1,260 @@
+.faq {
+  background-color: $color-additional-background;
+}
+
+.faq__block {
+  width: 290px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 678px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1160px;
+  }
+}
+
+.faq__title {
+  color: $color-text-basic;
+  margin: 0;
+  padding: 70px 0 35px;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 0 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1160px;
+    padding: 100px 0 50px;
+  }
+}
+
+.faq__tab-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+  }
+}
+
+.faq__tab-button {
+  color: $color-text-basic;
+  width: 140px;
+  padding: 14px 0;
+  border: 1px solid $color-border-tab;
+  box-sizing: border-box;
+  background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    padding: 17px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 260px;
+  }
+}
+
+.tab-button-active {
+  color: $color-text-dark-background;
+  background: $color-button-tab-background;
+  border: none;
+  padding: 15px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 18px 0;
+  }
+}
+
+.faq__toggle {
+  width: 30px;
+  height: 30px;
+  border: 1px solid $color-border-toggle;
+  border-radius: 50%;
+  background-color: transparent;
+  position: relative;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.faq__toggle::after,
+.faq__toggle::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 14px;
+  height: 1px;
+  background-color: $color-border-toggle;
+
+  @media (min-width: $tablet-width) {
+    width: 20px;
+  }
+}
+
+.faq__toggle::before {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.toggle-active {
+  background-color: $color-border-toggle;
+
+  &::before {
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: $color-text-dark-background;
+  }
+}
+
+.faq__container-tab {
+  font-style: normal;
+  margin: 0 0 70px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    gap: 40px;
+    margin: 0 0 100px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  ul:nth-child(1) {
+    margin: 0 0 35px;
+
+    @media (min-width: $tablet-width) {
+      margin: 0 0 45px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0;
+    }
+  }
+
+  ul:nth-child(2) li {
+    padding: 20px 0;
+    border-bottom: 1px solid $color-border-faq;
+
+    @media (min-width: $tablet-width) {
+      padding: 23px 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 23px 0 22px;
+    }
+  }
+
+  ul:nth-child(2) li:nth-child(1) {
+    border-top: 1px solid $color-border-faq;
+  }
+
+  h5 {
+    display: block;
+    font-family: $secondary-font;
+    color: $color-text-basic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+    width: 238px;
+
+    @media (min-width: $tablet-width) {
+      width: 500px;
+      font-size: 22px;
+      line-height: 22px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 800px;
+      font-size: 24px;
+      line-height: 24px;
+    }
+  }
+
+  br {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  ul:nth-child(2) li:nth-child(1) p br:nth-child(1) {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+
+  ul:nth-child(2) li:nth-child(4) br {
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
+
+  ul:nth-child(2) li:nth-child(4) br:nth-child(1) {
+    display: block;
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (min-width: $desktop-width) {
+      gap: 20px;
+    }
+  }
+
+  p {
+    width: 241px;
+    font-family: $secondary-font;
+    color: $color-text-basic;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 20px 0 0;
+
+    @media (min-width: $tablet-width) {
+      width: 525px;
+      font-size: 18px;
+      line-height: 24px;
+      margin: 10px 0 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 645px;
+      margin: 22px 0 0;
+    }
+  }
+}
+
+.content-hide {
+  display: none;
+}
+
+.content-text-hide {
+  display: none;
+}

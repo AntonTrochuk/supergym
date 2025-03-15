@@ -212,6 +212,19 @@
   }
 }
 
+.button-tabs-text-f {
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+
 .number-m {
   font-family: $secondary-font;
   font-weight: 700;
