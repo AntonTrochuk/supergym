@@ -743,6 +743,39 @@
         </div>
       </div>
     </section>
+    <section class="main-container__reviews reviews" data-test="reviews">
+      <div class="reviews__block">
+        <h3 class="reviews__title heading-h3-j ">
+          Отзывы
+        </h3>
+        <ul>
+          <li>
+            <picture>
+              <source media="(min-width:1366px)" width="80" height="80" type="image/webp" srcset="./img/reviews_image_desktop@1x.webp 1x, ./img/reviews_image_desktop@2x.webp 2x">
+              <source media="(min-width: 768px)" width="80" height="80" type="image/webp" srcset="./img/reviews_image_tablet@1x.webp 1x, ./img/reviews_image_tablet@2x.webp 2x">
+              <source width="68" height="68" type="image/webp" srcset="./img/reviews_image_mobile@1x.webp 1x, ./img/reviews_image_mobile@2x.webp 2x">
+              <source media="(min-width:1366px)" width="80" height="80" type="image/png" srcset="./img/reviews_image_desktop@1x.png 1x, ./img/reviews_image_desktop @2x.png 2x">
+              <source media="(min-width: 768px)" width="80" height="80" type="image/png" srcset="./img/reviews_image_tablet@1x.png 1x, ./img/reviews_image_tablet@2x.png 2x">
+              <img src="./img/reviews_image_mobile@1x.png" srcset="./img/reviews_image_mobile@2x.png 2x" width="68" height="68" alt="Фотография пользователя оставившего комментарий.">
+            </picture>
+            <div>
+              <h6>
+                Анна Орлова
+              </h6>
+              <p>
+                «Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. <br>Зал просторный, <br>даже в вечернее время <br>нет очередей»
+              </p>
+            </div>
+          </li>
+          <button class="reviews__button reviews__button--prev" type="button">
+            <span class="visually-hidden">Назад</span>
+          </button>
+          <button class="reviews__button reviews__button--next" type="button">
+            <span class="visually-hidden">Следующий отзыв</span>
+          </button>
+        </ul>
+      </div>
+    </section>
   </main>
 
 </body>
@@ -755,9 +788,6 @@
 <!-- примеры требуемых атрибутов data-test="*"
     href="https://www.youtube.com/watch?v=9TZXsZItgdw&ab_channel=HTMLAcademy" data-href="https://www.youtube.com/embed/9TZXsZItgdw">
 
-
-    <div data-test="faq">faq</div>
-    <div data-test="reviews">reviews</div>
     <div data-test="form">form</div>
     <div data-test="footer">footer</div>
     <script type="module" src="js/main.js"></script>
