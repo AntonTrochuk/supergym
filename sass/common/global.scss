@@ -112,17 +112,26 @@
   line-height: 22px;
 
   @media (min-width: $tablet-width) {
-    font-weight: 700;
-    font-style: normal;
     font-size: 24px;
     line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
-    font-weight: 700;
-    font-style: normal;
     font-size: 26px;
     line-height: 26px;
+  }
+}
+
+.heading-h5 {
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
   }
 }
 
@@ -162,6 +171,18 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
+  }
+}
+
+.text-f {
+  font-family: $secondary-font;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 22px;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 400;
   }
 }
 
