@@ -2,3 +2,8 @@
 // import Swiper from "swiper";
 // import {Navigation, Pagination} from "swiper/modules";
 // import 'swiper/css';
+
+import { playVideo } from './hero-play-video';
+
+
+playVideo();

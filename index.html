@@ -16,6 +16,7 @@
   <link rel="preload" href="../source/fonts/Roboto-Condensed/RobotoCondensed-Regular.woff" type="font/woff" as="font" crossorigin="anonymous">
   <link rel="preload" href="../source/fonts/Roboto-Condensed/RobotoCondensed-Bold.woff" type="font/woff" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="sass/style.scss">
+  <script type="module" src="js/main.js" defer></script>
 </head>
 
 <body class="page-body">
@@ -23,7 +24,6 @@
     <section class="main-container__hero hero" data-test="hero">
       <div class="hero__block">
         <div class="hero__header">
-          <!-- Возможно надо спрайтом -->
           <picture>
             <source media="(min-width: 1366px)" width="130" height="26" type="image/svg+xml" srcset="./img/logo.svg">
             <source media="(min-width: 768px)" width="110" height="22" type="image/svg+xml" srcset="./img/logo.svg">
@@ -52,9 +52,9 @@
                 Кардио-зона
               </li>
             </ul>
-            <button class="hero__content-button mobile-button-m" type="button">
+            <a class="hero__content-button mobile-button-m" href="#price" type="button">
               Купить абонемент
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -104,7 +104,7 @@
         </div>
       </div>
     </section>
-    <section class="main-container__price price" data-test="price">
+    <section class="main-container__price price" data-test="price" id="price">
       <div class="price__block">
         <div class="price__tabs-block">
           <h3 class="price__tabs-title heading-h3">
@@ -918,7 +918,6 @@
     href="https://www.youtube.com/watch?v=9TZXsZItgdw&ab_channel=HTMLAcademy" data-href="https://www.youtube.com/embed/9TZXsZItgdw">
 
     <div data-test="footer">footer</div>
-    <script type="module" src="js/main.js"></script>
   -->
 
 </html>
