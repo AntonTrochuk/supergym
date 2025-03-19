@@ -4,6 +4,7 @@
 // import 'swiper/css';
 
 import { playVideo } from './hero-play-video';
-
+import { priceTab } from './price-tab';
 
 playVideo();
+priceTab();
