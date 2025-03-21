@@ -1,19 +1,28 @@
-.juri__block {
-  width: 260px;
-  margin: 0 auto;
+.juri {
   padding: 40px 0;
   position: relative;
 
   @media (min-width: $tablet-width) {
-    width: 560px;
-    margin: 0 auto;
     padding: 30px 59px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 55px;
+  }
+}
+
+.juri__block {
+  width: 260px;
+  margin: 0 auto;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1160px;
     margin: 0 auto;
-    padding: 100px 55px;
   }
 }
 
@@ -28,27 +37,22 @@
 }
 
 .juri__list {
-  list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  overflow: hidden;
   transform: translateX(0);
-
-  @media (min-width: $tablet-width) {
-    gap: 40px;
-  }
 }
 
 .juri__block-description {
   display: none;
   flex-direction: column;
   position: absolute;
+  top: 1px;
   width: 100%;
   height: 100%;
   color: $color-text-dark-background;
   background-color: rgba(16, 38, 84, 0.89);
   box-shadow: 0 0 35px 0 rgba(42, 59, 99, 0.17);
+  order: 10;
 
   h6 {
     margin: 46px 0 8px;
@@ -88,12 +92,7 @@
 }
 
 .juri__item {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  width: auto;
-  height: auto;
-  position: relative;
 
   img {
     display: flex;
@@ -137,11 +136,8 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    top: 264px;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 331px;
+    top: 231px;
+    z-index: 10;
   }
 }
 
@@ -153,11 +149,11 @@
   background-size: cover;
 
   @media (min-width: $tablet-width) {
-    right: 6px;
+    right: -54px;
   }
 
-  @media (min-width: $tablet-width) {
-    right: 1px;
+  @media (min-width: $desktop-width) {
+    right: -55px;
   }
 }
 
@@ -169,10 +165,10 @@
   background-size: cover;
 
   @media (min-width: $tablet-width) {
-    left: 6px;
+    left: -54px;
   }
 
-  @media (min-width: $tablet-width) {
-    left: 1px;
+  @media (min-width: $desktop-width) {
+    left: -53px;
   }
 }
