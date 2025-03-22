@@ -1,5 +1,14 @@
 .reviews__title {
   color: $color-text-basic;
+  margin: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin: 60px 0 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 100px 0 75px;
+  }
 }
 
 .reviews__block {
@@ -7,22 +16,31 @@
   flex-direction: column;
   align-items: center;
   width: 240px;
-  margin: 0 auto;
+  margin: 0 auto 40px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     width: 678px;
-    margin: 0 auto 20px;
+    margin: 0 auto 60px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1160px;
-    margin: 0 auto 60px;
+    margin: 0 auto 100px;
   }
 
   ul {
-    width: 560px;
+    width: 240px;
     padding: 0;
     margin: 0;
+
+    @media (min-width: $tablet-width) {
+      width: 500px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 560px;
+    }
   }
 
   li {
@@ -31,7 +49,9 @@
     color: $color-text-dark-background;
     padding: 30px 25px;
     box-sizing: border-box;
-    flex-shrink: 1;
+    flex-shrink: 0;
+    flex-direction: column;
+    align-items: center;
 
     @media (min-width: $tablet-width) {
       flex-direction: row;
@@ -39,11 +59,13 @@
       gap: 40px;
       text-align: left;
       align-items: start;
+      flex-shrink: 0;
     }
 
     @media (min-width: $desktop-width) {
-      padding: 60px;
+      padding: 60px 65px 60px 60px;
       gap: 30px;
+      flex-shrink: 1;
     }
   }
 
@@ -52,7 +74,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 20px;
-    margin: 10px 0 16px;
+    margin: 6px 0 16px;
 
     @media (min-width: $tablet-width) {
       margin: 0 0 20px;
@@ -111,12 +133,23 @@
   overflow: hidden;
 }
 
+.reviews__slide div {
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: start;
+  }
+}
+
 .reviews__button {
   display: none;
   width: 16px;
   height: 32px;
   border: none;
   position: absolute;
+  order: 15;
+  background-size: cover;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -133,14 +166,13 @@
   background-repeat: no-repeat;
   background-color: transparent;
   rotate: 180deg;
-  background-size: cover;
 
   @media (min-width: $tablet-width) {
     right: 0;
   }
 
   @media (min-width: $desktop-width) {
-    right: 299px;
+    right: 196px;
   }
 }
 
@@ -149,13 +181,12 @@
   background-image: url("/__spritemap#sprite-juri_prev_button-view");
   background-repeat: no-repeat;
   background-color: transparent;
-  background-size: cover;
 
   @media (min-width: $tablet-width) {
     left: 0;
   }
 
   @media (min-width: $desktop-width) {
-    left: 299px;
+    left: 196px;
   }
 }

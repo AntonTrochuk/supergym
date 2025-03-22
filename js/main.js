@@ -64,8 +64,8 @@ const reviewsSlider = new Swiper(reviewsSwiper, {
   },
 
   navigation: {
-    nextEl: '.reviews__swiper-button--next',
-    prevEl: '.reviews__swiper-button--prev',
+    nextEl: '.reviews__button--next',
+    prevEl: '.reviews__button--prev',
     lockClass: 'disabled',
   },
 });
