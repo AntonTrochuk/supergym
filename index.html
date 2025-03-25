@@ -922,11 +922,17 @@
               <ul class="form__input-block">
                 <li class="form__input-item">
                   <label class="visually-hidden" for="name">Имя</label>
-                  <input class="form__input text-f" type="text" id="name" name="name" placeholder="Имя" required>
+                  <input class="form__input  text-f" type="text" id="name" name="name" placeholder="Имя" pattern="[A-Za-zА-Яа-яЁё\s]+" required>
+                  <p class="form__name-error visually-hidden text-s">
+                    Ошибка
+                  </p>
                 </li>
                 <li class="form__input-item">
                   <label class="visually-hidden" for="phone">Телефон</label>
-                  <input class="form__input text-f" type="number" id="phone" name="phone" placeholder="Телефон" required>
+                  <input class="form__input text-f" type="number" id="phone" name="phone" placeholder="Телефон" pattern="[\d\s\-\+\(\)]+" required>
+                  <p class="form__phone-error visually-hidden text-s">
+                    Ошибка
+                  </p>
                 </li>
               </ul>
               <button class="form__button mobile-button-m" type="submit">отправить</button>

@@ -65,9 +65,11 @@
 .form__input {
   width: 290px;
   background-color: transparent;
-  border: none;
+  border: 1px solid transparent;
   padding: 0 0 4px;
-  border-bottom: 1px solid $color-border-faq;
+  border-bottom-color: $color-form-border-default;
+  color: $color-text-dark-background;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     width: 205px;
@@ -76,7 +78,43 @@
 
   @media (min-width: $desktop-width) {
     width: 223px;
+    padding: 0 0 5px;
   }
+
+  &:hover {
+    border-bottom: 1px solid $color-text-dark-background;
+    color: $color-text-dark-background;
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid $color-text-dark-background;
+  }
+
+  &:disabled {
+    border-bottom: 1px solid $color-form-border-disabled;
+    color: $color-form-border-disabled;
+  }
+
+  &::placeholder {
+    color: $color-form-border-placeholder;
+  }
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+  }
+}
+
+.form__name-error,
+.form__phone-error {
+  margin: 2px 0 0;
+  color: $color-form-error;
+}
+
+.form__input-error {
+  border-bottom-color: $color-form-error;
 }
 
 .form__button {

@@ -6,10 +6,12 @@
 import { playVideo } from './hero-play-video';
 import { priceTab } from './price-tab';
 import { faqTub } from './faq-tab';
+import { validateForm } from './form-valid';
 
 playVideo();
 priceTab();
 faqTub();
+validateForm();
 
 import Swiper from 'swiper';
 import {Navigation} from 'swiper/modules';
