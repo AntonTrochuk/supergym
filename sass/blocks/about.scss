@@ -145,6 +145,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  outline: none;
 
   &::after {
     content: "";
@@ -171,5 +172,56 @@
     width: 72px;
     height: 72px;
     top: 79px;
+  }
+
+  &:hover {
+    background: $color-text-dark-background;
+  }
+
+  &:hover svg {
+    fill: $color-button-hover;
+  }
+
+  &:hover::after {
+    border-color: $color-button-hover;
+  }
+
+  &:focus-visible {
+    background: $color-button-focus;
+  }
+
+  &:focus-visible svg {
+    fill: $color-text-basic;
+  }
+
+  &:focus-visible::after {
+    border-color: $color-text-basic;
+  }
+
+  &:active {
+    background: $color-text-dark-background;
+    top: 87px;
+    width: 58px;
+    height: 58px;
+  }
+
+  &:active svg {
+    fill: $color-text-basic;
+  }
+
+  &:active::after {
+    border-color: $color-text-basic;
+  }
+
+  &:disabled {
+    background: transparent;
+  }
+
+  &:disabled svg {
+    fill: $color-button-hover;
+  }
+
+  &:disabled::after {
+    border-color: $color-button-hover;
   }
 }

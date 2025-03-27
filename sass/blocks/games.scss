@@ -203,6 +203,7 @@
 }
 
 .games__button {
+  cursor: pointer;
   width: 210px;
   padding: 22px 0;
   background-color: transparent;
@@ -219,5 +220,22 @@
   @media (min-width: $desktop-width) {
     width: 340px;
     padding: 25px 0;
+  }
+
+  &:hover,
+  &:focus-visible {
+    background-color: $color-text-dark-background;
+    color: $color-text-basic;
+  }
+
+  &:active {
+    background-color: $color-text-dark-background;
+    color: $color-text-basic;
+    border-color: $color-text-basic;
+  }
+
+  &:disabled {
+    color: $color-form-border-disabled;
+    border-color: $color-form-border-disabled;
   }
 }

@@ -2,6 +2,8 @@
   font-style: normal;
 
   a {
+    position: absolute;
+    bottom: 20px;
     color: $color-dark-additional-background;
     text-transform: uppercase;
     text-decoration: none;
@@ -10,10 +12,62 @@
     line-height: 14px;
     padding: 0 0 5px;
     border-bottom: 1px solid $color-dark-additional-background;
-    margin: 0 0 20px;
+    margin: 0;
 
     @media (min-width: $tablet-width) {
       margin: auto 0 0;
+      bottom: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      bottom: 20px;
+    }
+
+    &:hover {
+      color: $color-price-button-disabled;
+      border-bottom-color: $color-offers-button-hover-dark;
+    }
+
+    &:disabled {
+      color: $color-price-button-disabled;
+      border-bottom: 1px solid $color-price-button-disabled;
+    }
+  }
+
+  a:focus {
+    color: $color-dark-additional-background;
+    padding: 10px;
+    border: 1px solid $color-dark-additional-background;
+    outline: none;
+    bottom: 15px;
+
+    @media (min-width: $tablet-width) {
+      bottom: 15px;
+      left: 10px;
+    }
+
+    @media (min-width: $desktop-width) {
+      bottom: 15px;
+      left: 10px;
+    }
+  }
+
+  a:active {
+    color: $color-dark-additional-background;
+    border: none;
+    border-bottom: 1px solid $color-dark-additional-background;
+    outline: none;
+    padding: 0 0 5px;
+    bottom: 20px;
+
+    @media (min-width: $tablet-width) {
+      bottom: 20px;
+      left: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      bottom: 20px;
+      left: 20px;
     }
   }
 
@@ -124,6 +178,7 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
+    position: relative;
 
     @media (min-width: $tablet-width) {
       width: 228px;
@@ -175,7 +230,7 @@
     font-weight: 300;
     font-size: 16px;
     line-height: 20px;
-    margin: 0 0 28px;
+    margin: 0 0 78px;
     width: 175px;
 
     @media (min-width: $tablet-width) {
@@ -187,12 +242,65 @@
   }
 
   div div div a {
+    position: absolute;
+    bottom: 30px;
     color: $color-text-dark-background;
     border-bottom-color: $color-text-dark-background;
-    margin: 0 0 30px;
+    margin: 0;
 
     @media (min-width: $tablet-width) {
-      margin: auto 0 0;
+      bottom: 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+      bottom: 40px;
+    }
+
+    &:hover {
+      color: $color-offers-button-hover;
+      border-bottom-color: $color-offers-button-hover;
+    }
+
+    &:disabled {
+      color: $color-price-button-disabled;
+      border-bottom: 1px solid $color-price-button-disabled;
+    }
+  }
+
+  div div div a:focus {
+    border: 1px solid $color-text-dark-background;
+    padding: 10px;
+    outline: none;
+    bottom: 25px;
+
+    @media (min-width: $tablet-width) {
+      left: 15px;
+      bottom: 35px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 10px;
+      bottom: 35px;
+      left: 35px;
+    }
+  }
+
+  div div div a:active {
+    border: none;
+    color: $color-text-dark-background;
+    border-bottom: 1px solid $color-text-dark-background;
+    padding: 0 0 5px;
+    bottom: 30px;
+
+    @media (min-width: $tablet-width) {
+      left: 25px;
+      bottom: 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0 0 5px;
+      bottom: 40px;
+      left: 45px;
     }
   }
 
@@ -221,6 +329,7 @@
   }
 
   li {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -254,7 +363,7 @@
     font-weight: 300;
     font-size: 14px;
     line-height: 22px;
-    padding: 0 0 20px;
+    padding: 0 0 60px;
     margin: 0;
     width: 236px;
 
@@ -262,12 +371,12 @@
       width: 270px;
       font-size: 16px;
       line-height: 24px;
-      padding: 0 0 30px;
+      padding: 0 0 50px;
     }
 
     @media (min-width: $desktop-width) {
       width: 500px;
-      padding: 0 0 40px;
+      padding: 0 0 60px;
     }
   }
 

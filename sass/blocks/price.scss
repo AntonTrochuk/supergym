@@ -123,13 +123,33 @@
   color: $color-light-text;
   padding: 0;
   cursor: pointer;
+
+  &:not(.tabs-button--active):hover {
+    color: $color-price-tabs-hover;
+    padding: 0 0 8px;
+    border-bottom: 2px solid $color-price-border-hover;
+  }
+
+  &:not(.tabs-button--active):focus-visible {
+    color: $color-text-basic;
+    border-bottom: 2px solid $color-text-basic;
+    padding: 0 0 8px;
+    outline: none;
+  }
+
+  &:disabled {
+    color: $color-price-button-disabled;
+    border-bottom: 2px solid $color-price-button-disabled;
+    padding: 0 0 8px;
+  }
 }
 
 .tabs-button--active {
   color: $color-text-basic;
-  border-bottom: 2px solid $color-state-tabs;
+  border-bottom: 2px solid $color-banners;
   padding: 0 0 7px;
   box-sizing: border-box;
+  outline: none;
 
   @media (min-width: $tablet-width) {
     padding: 0 0 8px;
@@ -157,20 +177,31 @@
 }
 
 .price__item {
-  padding: 50px 42px;
+  padding: 43px 35px;
   background-color: $color-text-dark-background;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 18px;
+  border: 7px solid transparent;
+  box-sizing: border-box;
+  border-image-slice: 1; // Важно! Без этого градиент не работает
+  border-image-width: 7px; // Соответствует толщине border
+  border-image-outset: 0;
 
   @media (min-width: $tablet-width) {
-    padding: 65px;
+    padding: 59px 58px;
     gap: 22px;
   }
 
   @media (min-width: $desktop-width) {
+    padding: 59px 58px 58px;
     gap: 17px;
+
+    &:hover,
+    &:focus-visible {
+      border-image-source: $color-border-gradient;
+    }
   }
 }
 
@@ -220,6 +251,10 @@
       height: 42px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    gap: 14px;
+  }
 }
 
 .price__text-shadow {
@@ -232,6 +267,7 @@
 }
 
 .price__button {
+  cursor: pointer;
   width: 206px;
   padding: 25px 0;
   background-color: transparent;
@@ -242,9 +278,43 @@
 
   @media (min-width: $tablet-width) {
     width: 250px;
+    padding: 24px 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 230px;
+    padding: 25px 0;
+  }
+
+  &:hover {
+    background-image: $color-price-button-gradient;
+    border: none;
+    padding: 27px 0;
+    color: $color-text-dark-background;
+
+    @media (min-width: $tablet-width) {
+      padding: 26px 0;
+    }
+  }
+
+  &:focus-visible {
+    background-image: $color-price-button-focus-gradient;
+    color: $color-text-dark-background;
+    border-color: $color-hero-button-focus-border;
+    outline: none;
+  }
+
+  &:active {
+    border: none;
+    padding: 26px 0;
+    outline: none;
+    background-image: $color-price-button-gradient;
+    color: $color-white-opacity;
+  }
+
+  &:disabled {
+    background-color: $color-text-dark-background;
+    color: $color-price-button-disabled;
+    border-color: $color-hero-button-active;
   }
 }

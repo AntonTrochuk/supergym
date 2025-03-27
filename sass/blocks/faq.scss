@@ -52,6 +52,7 @@
   box-sizing: border-box;
   background-color: transparent;
   cursor: pointer;
+  outline: none;
 
   @media (min-width: $tablet-width) {
     width: 162px;
@@ -60,6 +61,16 @@
 
   @media (min-width: $desktop-width) {
     width: 260px;
+  }
+
+  &:hover,
+  &:focus-visible {
+    border-color: $color-text-basic;
+  }
+
+  &:disabled {
+    border-color: $color-border-tab;
+    color: $color-border-tab;
   }
 }
 
@@ -82,10 +93,24 @@
   background-color: transparent;
   position: relative;
   cursor: pointer;
+  outline: none;
 
   @media (min-width: $tablet-width) {
     width: 40px;
     height: 40px;
+  }
+
+  &:hover {
+    background-color: $color-dark-additional-background;
+  }
+
+  &:focus-visible {
+    background-color: $color-border-faq;
+  }
+
+  &:disabled {
+    background-color: transparent;
+    border: 1px solid $color-faq-toggle-disabled;
   }
 }
 
@@ -103,6 +128,21 @@
   @media (min-width: $tablet-width) {
     width: 20px;
   }
+}
+
+.faq__toggle:hover::before,
+.faq__toggle:hover::after {
+  background-color: $color-text-dark-background;
+}
+
+.faq__toggle:focus-visible::before,
+.faq__toggle:focus-visible::after {
+  background-color: $color-text-dark-background;
+}
+
+.faq__toggle:disabled::before,
+.faq__toggle:disabled::after {
+  background-color: $color-faq-toggle-disabled;
 }
 
 .faq__toggle::before {

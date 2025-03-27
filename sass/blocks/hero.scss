@@ -36,6 +36,25 @@
   color: $color-text-dark-background;
   text-decoration: none;
   display: inline-block;
+
+  &:hover {
+    color: $color-link-hover;
+  }
+
+  &:focus-visible {
+    color: $color-dark-additional-background;
+  }
+
+  &:active {
+    color: $color-text-basic;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 10px;
+  }
+
+  &:disabled {
+    color: $color-link-disabled;
+  }
 }
 
 .hero__content {
@@ -175,5 +194,30 @@
     padding: 25px 0;
     margin: 0;
     width: 270px;
+  }
+
+  &:hover {
+    background-color: $color-text-dark-background;
+    color: $color-text-additional-accent;
+  }
+
+  &:focus-visible {
+    background-color: $color-hero-button-focus;
+    color: $color-text-additional-accent;
+    border-color: $color-hero-button-focus-border;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $color-text-dark-background;
+    color: $color-hero-button-active;
+    border-color: $color-text-dark-background;
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: transparent;
+    color: $color-hero-button-disabled;
+    border-color: $color-hero-button-disabled;
   }
 }

@@ -128,16 +128,42 @@
 }
 
 .juri__button {
+  cursor: pointer;
   display: none;
-  width: 16px;
-  height: 32px;
-  border: none;
+  border: transparent;
+  width: 50px;
+  height: 50px;
+  padding: 9px 17px;
   position: absolute;
+  background-position: center;
 
   @media (min-width: $tablet-width) {
     display: block;
-    top: 231px;
+    top: 225px;
     z-index: 10;
+  }
+
+  &:hover {
+    border: 1px solid $color-text-basic;
+    border-radius: 50%;
+  }
+
+  &:focus-visible {
+    border: 1px solid $color-text-basic;
+    border-radius: 50%;
+    background-color: $color-price-shadow;
+    outline: none;
+  }
+
+  &:active {
+    border: 1px solid $color-text-basic;
+    background-color: $color-text-basic;
+  }
+
+  &:disabled {
+    border: transparent;
+    background-color: transparent;
+    opacity: 0.3;
   }
 }
 
@@ -146,14 +172,18 @@
   background-repeat: no-repeat;
   background-color: transparent;
   rotate: 180deg;
-  background-size: cover;
+  background-size: 16px 32px;
 
   @media (min-width: $tablet-width) {
-    right: -54px;
+    right: -71px;
   }
 
   @media (min-width: $desktop-width) {
-    right: -55px;
+    right: -71px;
+  }
+
+  &:active {
+    background-image: url("/__spritemap#sprite-juri_prev_button_active-view");
   }
 }
 
@@ -162,13 +192,17 @@
   background-image: url("/__spritemap#sprite-juri_prev_button-view");
   background-repeat: no-repeat;
   background-color: transparent;
-  background-size: cover;
+  background-size: 16px 32px;
 
   @media (min-width: $tablet-width) {
-    left: -54px;
+    left: -71px;
   }
 
   @media (min-width: $desktop-width) {
-    left: -53px;
+    left: -69px;
+  }
+
+  &:active {
+    background-image: url("/__spritemap#sprite-juri_prev_button_active-view");
   }
 }

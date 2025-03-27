@@ -64,7 +64,39 @@
   }
 
   @media (min-width: $desktop-width) {
-    gap: 0 82px;
+    gap: 0 62px;
+  }
+}
+
+.footer__menu-link {
+  text-decoration: none;
+  color: $color-text-dark-background;
+  outline: none;
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    padding: 5px 10px;
+  }
+
+  &:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 10px;
+  }
+
+  &:focus-visible {
+    outline: 1px solid $color-text-dark-background;
+  }
+
+  &:active {
+    text-decoration: none;
+    outline: none;
+  }
+
+  &:disabled {
+    text-decoration: none;
+    outline: none;
+    color: $color-form-border-disabled;
   }
 }
 
@@ -83,4 +115,33 @@
 
 .footer__social-link {
   display: flex;
+  outline: none;
+
+  &:hover svg {
+    fill: $color-text-dark-background;
+  }
+
+  &:hover svg path:nth-child(1) {
+    fill: $color-border-faq;
+  }
+
+  &:focus svg {
+    fill: $color-text-dark-background;
+  }
+
+  &:focus svg path:nth-child(1) {
+    fill: $color-text-additional-accent;
+  }
+
+  &:active svg {
+    fill: $color-text-dark-background;
+  }
+
+  &:active svg path:nth-child(1) {
+    fill: $color-text-basic;
+  }
+
+  &:disabled svg path:nth-child(1) {
+    fill: $color-footer-disabled;
+  }
 }
