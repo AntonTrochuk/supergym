@@ -185,8 +185,8 @@
   gap: 18px;
   border: 7px solid transparent;
   box-sizing: border-box;
-  border-image-slice: 1; // Важно! Без этого градиент не работает
-  border-image-width: 7px; // Соответствует толщине border
+  border-image-slice: 1;
+  border-image-width: 7px;
   border-image-outset: 0;
 
   @media (min-width: $tablet-width) {
