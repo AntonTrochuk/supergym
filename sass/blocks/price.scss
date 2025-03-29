@@ -124,13 +124,13 @@
   padding: 0;
   cursor: pointer;
 
-  &:not(.tabs-button--active):hover {
+  &:not(.price__tabs-button--active):hover {
     color: $color-price-tabs-hover;
     padding: 0 0 8px;
     border-bottom: 2px solid $color-price-border-hover;
   }
 
-  &:not(.tabs-button--active):focus-visible {
+  &:not(.price__tabs-button--active):focus-visible {
     color: $color-text-basic;
     border-bottom: 2px solid $color-text-basic;
     padding: 0 0 8px;
@@ -144,7 +144,7 @@
   }
 }
 
-.tabs-button--active {
+.price__tabs-button--active {
   color: $color-text-basic;
   border-bottom: 2px solid $color-banners;
   padding: 0 0 7px;

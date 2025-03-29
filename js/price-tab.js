@@ -10,9 +10,9 @@ const priceTab = () => {
     tabButton.addEventListener('click', () => {
 
       tabsButton.forEach((button) => {
-        button.classList.remove('tabs-button--active');
+        button.classList.remove('price__tabs-button--active');
       });
-      tabButton.classList.add('tabs-button--active');
+      tabButton.classList.add('price__tabs-button--active');
 
       if (tabButton.dataset.tab === 'tab-1') {
         textsShadow[0].textContent = oneMonths[0];

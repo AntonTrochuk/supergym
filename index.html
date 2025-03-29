@@ -5,18 +5,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SUPERGYM</title>
-  <link rel="preload" href="../source/fonts/Alumni-Sans/AlumniSans-SemiBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="../source/fonts/Alumni-Sans/AlumniSans-ExtraBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="../source/fonts/Roboto-Condensed/RobotoCondensed-Light.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="../source/fonts/Roboto-Condensed/RobotoCondensed-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="../source/fonts/Roboto-Condensed/RobotoCondensed-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="../source/fonts/Alumni-Sans/AlumniSans-SemiBold.woff" type="font/woff" as="font" crossorigin="anonymous">
-  <link rel="preload" href="../source/fonts/Alumni-Sans/AlumniSans-ExtraBold.woff" type="font/woff" as="font" crossorigin="anonymous">
-  <link rel="preload" href="../source/fonts/Roboto-Condensed/RobotoCondensed-Light.woff" type="font/woff" as="font" crossorigin="anonymous">
-  <link rel="preload" href="../source/fonts/Roboto-Condensed/RobotoCondensed-Regular.woff" type="font/woff" as="font" crossorigin="anonymous">
-  <link rel="preload" href="../source/fonts/Roboto-Condensed/RobotoCondensed-Bold.woff" type="font/woff" as="font" crossorigin="anonymous">
+  <link rel="icon" href="./favicon.ico">
+  <link rel="icon" href="./favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./favicons/180.png">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="preload" href="../source/fonts/alumni-sans/AlumniSans-SemiBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="../source/fonts/alumni-sans/AlumniSans-ExtraBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="../source/fonts/roboto-condensed/RobotoCondensed-Light.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="../source/fonts/roboto-condensed/RobotoCondensed-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="../source/fonts/roboto-condensed/RobotoCondensed-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="../source/fonts/alumni-sans/AlumniSans-SemiBold.woff" type="font/woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="../source/fonts/alumni-sans/AlumniSans-ExtraBold.woff" type="font/woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="../source/fonts/roboto-condensed/RobotoCondensed-Light.woff" type="font/woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="../source/fonts/roboto-condensed/RobotoCondensed-Regular.woff" type="font/woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="../source/fonts/roboto-condensed/RobotoCondensed-Bold.woff" type="font/woff" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="sass/style.scss">
-  <script type="module" src="js/main.js" defer></script>
 </head>
 
 <body class="page-body">
@@ -38,9 +41,9 @@
             <h1 class="hero__content-title heading-h1">
               Фитнес центр
             </h1>
-            <h3 class="hero__content-subtitle heading-h3">
+            <h2 class="hero__content-subtitle heading-h3">
               Омск
-            </h3>
+            </h2>
             <ul class="hero__content-list text-s">
               <li class="hero__content-item">
                 Тренажёрный зал
@@ -52,7 +55,7 @@
                 Кардио-зона
               </li>
             </ul>
-            <a class="hero__content-button mobile-button-m" href="#price" type="button">
+            <a class="hero__content-button mobile-button-m" href="#price">
               Купить абонемент
             </a>
           </div>
@@ -65,9 +68,9 @@
           <h3 class="about__title heading-h3">
             Тренажёрный зал
           </h3>
-          <h6 class="about__subtitle heading-h6">
+          <h4 class="about__subtitle heading-h6">
             Просторный зал площадью 900 кв/м
-          </h6>
+          </h4>
           <p>
             <span>
               Supergym – самый большой фитнес центр <br>за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием <br>для всех спортсменов.
@@ -112,7 +115,7 @@
           </h3>
           <ul class="price__tabs-list">
             <li class="price__tabs-item">
-              <button class="price__tabs-button tabs-button--active button-tabs-text " type="button" data-tab="tab-1">
+              <button class="price__tabs-button price__tabs-button--active button-tabs-text " type="button" data-tab="tab-1">
                 1 месяц
               </button>
             </li>
@@ -244,13 +247,13 @@
                 <source media="(min-width: 320px)" width="260" height="300" type="image/webp" srcset="./img/juri_anna_pavlova@1x.webp 1x, ./img/juri_anna_pavlova@2x.webp 2x">
                 <img width="260" height="300" src="./img/juri_anna_pavlova@1x.jpg" srcset="./img/juri_anna_pavlova@2x.jpg 2x" alt="Фотография участника жюри Анны Павловой.">
               </picture>
-              <h6 class="juri__subtitle heading-h6-j">
+              <h4 class="juri__subtitle heading-h6-j">
                 Анна Павлова
-              </h6>
+              </h4>
               <div class="juri__block-description">
-                <h6 class="juri__subtitle-description heading-h6-j">
+                <h4 class="juri__subtitle-description heading-h6-j">
                   Анна Павлова
-                </h6>
+                </h4>
                 <span class="text-m-j">
                   CrossFit
                 </span>
@@ -272,13 +275,13 @@
                 <source media="(min-width: 320px)" width="260" height="300" type="image/webp" srcset="./img/juri_aleksey_lavrov@1x.webp 1x, ./img/juri_aleksey_lavrov@2x.webp 2x">
                 <img width="260" height="300" src="./img/juri_aleksey_lavrov@1x.jpg" srcset="./img/juri_aleksey_lavrov@2x.jpg 2x" alt="Фотография участника жюри Алексея Лаврова.">
               </picture>
-              <h6 class="juri__subtitle heading-h6-j">
+              <h4 class="juri__subtitle heading-h6-j">
                 Алексей Лавров
-              </h6>
+              </h4>
               <div class="juri__block-description ">
-                <h6 class="juri__subtitle-description heading-h6-j">
+                <h4 class="juri__subtitle-description heading-h6-j">
                   Алексей Лавров
-                </h6>
+                </h4>
                 <span class="text-m-j">
                   CrossFit
                 </span>
@@ -300,13 +303,13 @@
                 <source media="(min-width: 320px)" width="260" height="300" type="image/webp" srcset="./img/juri_aleksandr_pahkov@1x.webp 1x, ./img/juri_aleksandr_pahkov@2x.webp 2x">
                 <img width="260" height="300" src="./img/juri_aleksandr_pahkov@1x.jpg" srcset="./img/juri_aleksandr_pahkov@2x.jpg 2x" alt="Фотография участника жюри Александра Пашкова.">
               </picture>
-              <h6 class="juri__subtitle heading-h6-j">
+              <h4 class="juri__subtitle heading-h6-j">
                 Александр Пашков
-              </h6>
+              </h4>
               <div class="juri__block-description ">
-                <h6 class="juri__subtitle-description heading-h6-j">
+                <h4 class="juri__subtitle-description heading-h6-j">
                   Александр Пашков
-                </h6>
+                </h4>
                 <span class="text-m-j">
                   CrossFit
                 </span>
@@ -328,13 +331,13 @@
                 <source media="(min-width: 320px)" width="260" height="300" type="image/webp" srcset="./img/juri_maria_ketova@1x.webp 1x, ./img/juri_maria_ketova@2x.webp 2x">
                 <img width="260" height="300" src="./img/juri_maria_ketova@1x.jpg" srcset="./img/juri_maria_ketova@2x.jpg 2x" alt="Фотография участника жюри Марии Кетовой.">
               </picture>
-              <h6 class="juri__subtitle heading-h6-j">
+              <h4 class="juri__subtitle heading-h6-j">
                 Мария Кетова
-              </h6>
+              </h4>
               <div class="juri__block-description">
-                <h6 class="juri__subtitle-description heading-h6-j">
+                <h4 class="juri__subtitle-description heading-h6-j">
                   Мария Кетова
-                </h6>
+                </h4>
                 <span class="text-m-j">
                   CrossFit
                 </span>
@@ -357,13 +360,13 @@
                 <source media="(min-width: 320px)" width="260" height="300" type="image/webp" srcset="./img/juri_anna_pavlova@1x.webp 1x, ./img/juri_anna_pavlova@2x.webp 2x">
                 <img width="260" height="300" src="./img/juri_anna_pavlova@1x.jpg" srcset="./img/juri_anna_pavlova@2x.jpg 2x" alt="Фотография участника жюри Анны Павловой.">
               </picture>
-              <h6 class="juri__subtitle heading-h6-j">
+              <h4 class="juri__subtitle heading-h6-j">
                 Анна Павлова
-              </h6>
+              </h4>
               <div class="juri__block-description">
-                <h6 class="juri__subtitle-description heading-h6-j">
+                <h4 class="juri__subtitle-description heading-h6-j">
                   Анна Павлова
-                </h6>
+                </h4>
                 <span class="text-m-j">
                   CrossFit
                 </span>
@@ -385,13 +388,13 @@
                 <source media="(min-width: 320px)" width="260" height="300" type="image/webp" srcset="./img/juri_aleksey_lavrov@1x.webp 1x, ./img/juri_aleksey_lavrov@2x.webp 2x">
                 <img width="260" height="300" src="./img/juri_aleksey_lavrov@1x.jpg" srcset="./img/juri_aleksey_lavrov@2x.jpg 2x" alt="Фотография участника жюри Алексея Лаврова.">
               </picture>
-              <h6 class="juri__subtitle heading-h6-j">
+              <h4 class="juri__subtitle heading-h6-j">
                 Алексей Лавров
-              </h6>
+              </h4>
               <div class="juri__block-description ">
-                <h6 class="juri__subtitle-description heading-h6-j">
+                <h4 class="juri__subtitle-description heading-h6-j">
                   Алексей Лавров
-                </h6>
+                </h4>
                 <span class="text-m-j">
                   CrossFit
                 </span>
@@ -413,13 +416,13 @@
                 <source media="(min-width: 320px)" width="260" height="300" type="image/webp" srcset="./img/juri_aleksandr_pahkov@1x.webp 1x, ./img/juri_aleksandr_pahkov@2x.webp 2x">
                 <img width="260" height="300" src="./img/juri_aleksandr_pahkov@1x.jpg" srcset="./img/juri_aleksandr_pahkov@2x.jpg 2x" alt="Фотография участника жюри Александра Пашкова.">
               </picture>
-              <h6 class="juri__subtitle heading-h6-j">
+              <h4 class="juri__subtitle heading-h6-j">
                 Александр Пашков
-              </h6>
+              </h4>
               <div class="juri__block-description ">
-                <h6 class="juri__subtitle-description heading-h6-j">
+                <h4 class="juri__subtitle-description heading-h6-j">
                   Александр Пашков
-                </h6>
+                </h4>
                 <span class="text-m-j">
                   CrossFit
                 </span>
@@ -441,13 +444,13 @@
                 <source media="(min-width: 320px)" width="260" height="300" type="image/webp" srcset="./img/juri_maria_ketova@1x.webp 1x, ./img/juri_maria_ketova@2x.webp 2x">
                 <img width="260" height="300" src="./img/juri_maria_ketova@1x.jpg" srcset="./img/juri_maria_ketova@2x.jpg 2x" alt="Фотография участника жюри Марии Кетовой.">
               </picture>
-              <h6 class="juri__subtitle heading-h6-j">
+              <h4 class="juri__subtitle heading-h6-j">
                 Мария Кетова
-              </h6>
+              </h4>
               <div class="juri__block-description">
-                <h6 class="juri__subtitle-description heading-h6-j">
+                <h4 class="juri__subtitle-description heading-h6-j">
                   Мария Кетова
-                </h6>
+                </h4>
                 <span class="text-m-j">
                   CrossFit
                 </span>
@@ -489,9 +492,9 @@
             </span>
           </div>
           <div>
-            <h6>
+            <h4>
               Площадь
-            </h6>
+            </h4>
             <p>
               Занимайтесь без очередей и толкучки
             </p>
@@ -507,9 +510,9 @@
             </span>
           </div>
           <div>
-            <h6>
+            <h4>
               Собственная парковка
-            </h6>
+            </h4>
             <p>
               Вы всегда найдёте место для своей машины на нашей парковке
             </p>
@@ -536,9 +539,9 @@
             </span>
           </div>
           <div>
-            <h6>
+            <h4>
               Комфорт
-            </h6>
+            </h4>
             <p>
               Просторные раздевалки, душевые, фен, Wi-Fi, кулеры
             </p>
@@ -554,9 +557,9 @@
             </span>
           </div>
           <div>
-            <h6>
+            <h4>
               Тренерский опыт
-            </h6>
+            </h4>
             <p>
               Добивайтесь своих целей быстрее с профессиональным тренером
             </p>
@@ -642,9 +645,9 @@
           <ul class="faq__tab-menu-content" id="faq-tab-1">
             <li>
               <div>
-                <h5>
+                <h4>
                   Как стать членом <br>фитнес-центра?
-                </h5>
+                </h4>
                 <button class="faq__toggle toggle-active" data-toggle="faq-center-tab-1" type="button">
                   <span class="visually-hidden">Закрыть ответ</span>
                 </button>
@@ -655,9 +658,9 @@
             </li>
             <li>
               <div>
-                <h5>
+                <h4>
                   Где можно посмотреть расписание?
-                </h5>
+                </h4>
                 <button class="faq__toggle" data-toggle="faq-center-tab-2" type="button">
                   <span class="visually-hidden">Раскрыть ответ</span>
                 </button>
@@ -668,9 +671,9 @@
             </li>
             <li>
               <div>
-                <h5>
+                <h4>
                   Есть кулеры в центре? Предоставляются полотенца?
-                </h5>
+                </h4>
                 <button class="faq__toggle" data-toggle="faq-center-tab-3" type="button">
                   <span class="visually-hidden">Раскрыть ответ</span>
                 </button>
@@ -681,9 +684,9 @@
             </li>
             <li>
               <div>
-                <h5>
+                <h4>
                   Сколько тренеров работает в клубе и какова <br>их квалификация?
-                </h5>
+                </h4>
                 <button class="faq__toggle" data-toggle="faq-center-tab-4" type="button">
                   <span class="visually-hidden">Раскрыть ответ</span>
                 </button>
@@ -696,9 +699,9 @@
           <ul class="faq__tab-menu-content content-hide" id="faq-tab-2">
             <li>
               <div>
-                <h5>
+                <h4>
                   Занятия с тренером входят в абонемент?
-                </h5>
+                </h4>
                 <button class="faq__toggle" data-toggle="faq-subscription-tab-1" type="button">
                   <span class="visually-hidden">Раскрыть ответ</span>
                 </button>
@@ -709,9 +712,9 @@
             </li>
             <li>
               <div>
-                <h5>
+                <h4>
                   Можно ли заморозить абонемент?
-                </h5>
+                </h4>
                 <button class="faq__toggle" data-toggle="faq-subscription-tab-2" type="button">
                   <span class="visually-hidden">Раскрыть ответ</span>
                 </button>
@@ -735,9 +738,9 @@
             </li>
             <li>
               <div>
-                <h5>
+                <h4>
                   Что такое семейный доступ и доступ для друзей?
-                </h5>
+                </h4>
                 <button class="faq__toggle" data-toggle="faq-subscription-tab-4" type="button">
                   <span class="visually-hidden">Раскрыть ответ</span>
                 </button>
@@ -750,9 +753,9 @@
           <ul class="faq__tab-menu-content content-hide" id="faq-tab-3">
             <li>
               <div>
-                <h5>
+                <h4>
                   Предлагает ли клуб услуги по консультированию по вопросам питания?
-                </h5>
+                </h4>
                 <button class="faq__toggle" data-toggle="faq-services-tab-1" type="button">
                   <span class="visually-hidden">Раскрыть ответ</span>
                 </button>
@@ -763,9 +766,9 @@
             </li>
             <li>
               <div>
-                <h5>
+                <h4>
                   Проводятся ли в клубе какие-либо мероприятия или соревнования?
-                </h5>
+                </h4>
                 <button class="faq__toggle" data-toggle="faq-services-tab-2" type="button">
                   <span class="visually-hidden">Раскрыть ответ</span>
                 </button>
@@ -776,9 +779,9 @@
             </li>
             <li>
               <div>
-                <h5>
+                <h4>
                   Можно ли приобрести в центре спортивное питание?
-                </h5>
+                </h4>
                 <button class="faq__toggle" data-toggle="faq-services-tab-3" type="button">
                   <span class="visually-hidden">Раскрыть ответ</span>
                 </button>
@@ -789,9 +792,9 @@
             </li>
             <li>
               <div>
-                <h5>
+                <h4>
                   Есть ли в центре детская комната?
-                </h5>
+                </h4>
                 <button class="faq__toggle" data-toggle="faq-services-tab-4" type="button">
                   <span class="visually-hidden">Раскрыть ответ</span>
                 </button>
@@ -804,9 +807,9 @@
           <ul class="faq__tab-menu-content content-hide" id="faq-tab-4">
             <li>
               <div>
-                <h5>
+                <h4>
                   Есть в фитнес-центре дресс-код?
-                </h5>
+                </h4>
                 <button class="faq__toggle" data-toggle="faq-rules-tab-1" type="button">
                   <span class="visually-hidden">Раскрыть ответ</span>
                 </button>
@@ -817,9 +820,9 @@
             </li>
             <li>
               <div>
-                <h5>
+                <h4>
                   Можно ли приводить с собой детей на тренировки?
-                </h5>
+                </h4>
                 <button class="faq__toggle" data-toggle="faq-rules-tab-2" type="button">
                   <span class="visually-hidden">Раскрыть ответ</span>
                 </button>
@@ -830,9 +833,9 @@
             </li>
             <li>
               <div>
-                <h5>
+                <h4>
                   Какие дополнительные правила посещения центра?
-                </h5>
+                </h4>
                 <button class="faq__toggle" data-toggle="faq-rules-tab-3" type="button">
                   <span class="visually-hidden">Раскрыть ответ</span>
                 </button>
@@ -843,9 +846,9 @@
             </li>
             <li>
               <div>
-                <h5>
+                <h4>
                   Нужна ли медицинская справка для посещения залов и бассейна?
-                </h5>
+                </h4>
                 <button class="faq__toggle" data-toggle="faq-rules-tab-4" type="button">
                   <span class="visually-hidden">Раскрыть ответ</span>
                 </button>
@@ -870,14 +873,14 @@
                 <source media="(min-width:1366px)" width="80" height="80" type="image/webp" srcset="./img/reviews_image_desktop@1x.webp 1x, ./img/reviews_image_desktop@2x.webp 2x">
                 <source media="(min-width: 768px)" width="80" height="80" type="image/webp" srcset="./img/reviews_image_tablet@1x.webp 1x, ./img/reviews_image_tablet@2x.webp 2x">
                 <source width="68" height="68" type="image/webp" srcset="./img/reviews_image_mobile@1x.webp 1x, ./img/reviews_image_mobile@2x.webp 2x">
-                <source media="(min-width:1366px)" width="80" height="80" type="image/png" srcset="./img/reviews_image_desktop@1x.png 1x, ./img/reviews_image_desktop @2x.png 2x">
+                <source media="(min-width:1366px)" width="80" height="80" type="image/png" srcset="./img/reviews_image_desktop@1x.png 1x, ./img/reviews_image_desktop@2x.png 2x">
                 <source media="(min-width: 768px)" width="80" height="80" type="image/png" srcset="./img/reviews_image_tablet@1x.png 1x, ./img/reviews_image_tablet@2x.png 2x">
                 <img src="./img/reviews_image_mobile@1x.png" srcset="./img/reviews_image_mobile@2x.png 2x" width="68" height="68" alt="Фотография пользователя оставившего комментарий.">
               </picture>
               <div>
-                <h6>
+                <h4>
                   Анна Орлова
-                </h6>
+                </h4>
                 <p>
                   «Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. <br>Зал просторный, <br>даже в вечернее время <br>нет очередей»
                 </p>
@@ -888,14 +891,14 @@
                 <source media="(min-width:1366px)" width="80" height="80" type="image/webp" srcset="./img/reviews_image_desktop@1x.webp 1x, ./img/reviews_image_desktop@2x.webp 2x">
                 <source media="(min-width: 768px)" width="80" height="80" type="image/webp" srcset="./img/reviews_image_tablet@1x.webp 1x, ./img/reviews_image_tablet@2x.webp 2x">
                 <source width="68" height="68" type="image/webp" srcset="./img/reviews_image_mobile@1x.webp 1x, ./img/reviews_image_mobile@2x.webp 2x">
-                <source media="(min-width:1366px)" width="80" height="80" type="image/png" srcset="./img/reviews_image_desktop@1x.png 1x, ./img/reviews_image_desktop @2x.png 2x">
+                <source media="(min-width:1366px)" width="80" height="80" type="image/png" srcset="./img/reviews_image_desktop@1x.png 1x, ./img/reviews_image_desktop@2x.png 2x">
                 <source media="(min-width: 768px)" width="80" height="80" type="image/png" srcset="./img/reviews_image_tablet@1x.png 1x, ./img/reviews_image_tablet@2x.png 2x">
                 <img src="./img/reviews_image_mobile@1x.png" srcset="./img/reviews_image_mobile@2x.png 2x" width="68" height="68" alt="Фотография пользователя оставившего комментарий.">
               </picture>
               <div>
-                <h6>
+                <h4>
                   Алина Орлова
-                </h6>
+                </h4>
                 <p>
                   «Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. <br>Зал просторный, <br>даже в вечернее время <br>нет очередей»
                 </p>
@@ -929,7 +932,7 @@
                 </li>
                 <li class="form__input-item">
                   <label class="visually-hidden" for="phone">Телефон</label>
-                  <input class="form__input text-f" type="number" id="phone" name="phone" placeholder="Телефон" pattern="[\d\s\-\+\(\)]+" required>
+                  <input class="form__input text-f" type="tel" id="phone" name="phone" placeholder="Телефон" pattern="[\d\s\-\+\(\)]+" required>
                   <p class="form__phone-error visually-hidden text-s">
                     Ошибка
                   </p>
@@ -944,9 +947,9 @@
             </h3>
             <ul class="form__contacts-list">
               <li class="form__contacts-item">
-                <h5 class="form__contacts-subtitle heading-h5">
+                <h4 class="form__contacts-subtitle heading-h5">
                   Адрес:
-                </h5>
+                </h4>
                 <address class="form__contacts-text text-s">
                   г. Омск, ул. 60 лет Октября, 7
                 </address>
@@ -1058,6 +1061,7 @@
       </ul>
     </div>
   </footer>
+  <script type="module" src="js/main.js"></script>
 </body>
 <!-- пример использования спрайта
     <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
