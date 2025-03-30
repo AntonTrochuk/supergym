@@ -8,6 +8,7 @@
   margin: 0 auto;
   padding: 70px 0;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   gap: 35px;
 
@@ -33,6 +34,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
   }
 }
 
@@ -54,6 +56,7 @@
   padding: 0;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   gap: 36px;
 
   @media (min-width: $tablet-width) {
@@ -174,6 +177,7 @@
   padding: 0;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   gap: 28px;
 
   @media (min-width: $tablet-width) {
